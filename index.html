@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panini Ashram</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      /* Soft pastel gradient background */
+      background: linear-gradient(135deg, #f8f1f1, #dbeafe);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #3b82f6, #2563eb); /* bright blue gradient */
+      color: white;
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 1.2em;
+      font-weight: 500;
+      opacity: 0.85;
+    }
+
+    nav {
+      background: #2563eb; /* matching deep blue */
+      display: flex;
+      justify-content: center;
+      padding: 15px 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      margin: 0 25px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #1e40af; /* darker blue on hover */
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px 40px;
+    }
+
+    .facility {
+      background: white;
+      margin-bottom: 25px;
+      padding: 25px 25px 25px 120px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .facility h2 {
+      color: #2563eb;
+      margin-bottom: 15px;
+      font-weight: 700;
+      font-size: 1.8em;
+    }
+
+    .facility p,
+    .facility ul {
+      font-size: 1.15em;
+      line-height: 1.6;
+    }
+
+    .facility ul {
+      padding-left: 20px;
+    }
+
+    /* Icon images positioned left */
+    .facility-icon {
+      position: absolute;
+      top: 50%;
+      left: 25px;
+      transform: translateY(-50%);
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      opacity: 0.85;
+      border-radius: 15px;
+      background: #e0e7ff;
+      padding: 10px;
+      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+    }
+
+    footer {
+      background: #3b82f6;
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+      font-size: 0.95em;
+      font-weight: 600;
+      letter-spacing: 0.7px;
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.12);
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      .facility {
+        padding-left: 90px;
+      }
+      .facility-icon {
+        width: 55px;
+        height: 55px;
+        left: 15px;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      nav a {
+        margin: 5px 0;
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Panini Ashram</h1>
+  <p>Syangja-14, Lamage, Nepal</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+  <div class="facility">
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/235/235861.png"
+      alt="School Building Icon"
+      class="facility-icon"
+    />
+    <h2>About the School</h2>
+    <p>
+      Panini Ashram is a government educational institution where underprivileged and needy children from across Nepal are provided with quality Sanskrit education along with residential facilities.
+    </p>
+  </div>
+
+  <div class="facility">
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/1046/1046860.png"
+      alt="Facilities Icon"
+      class="facility-icon"
+    />
+    <h2>Main Facilities</h2>
+    <ul>
+      <li>Residential hostel facilities</li>
+      <li>Nutritious and regular meals</li>
+      <li>Disciplined academic environment</li>
+      <li>Special focus on Sanskrit education</li>
+      <li>Classes conducted by experienced teachers</li>
+    </ul>
+  </div>
+
+  <div class="facility">
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/2948/2948036.png"
+      alt="Mission Icon"
+      class="facility-icon"
+    />
+    <h2>Our Mission</h2>
+    <p>
+      Our primary goal is to preserve the Sanskrit language and culture while providing quality education to children from disadvantaged and remote areas.
+    </p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Panini Ashram, Syangja-14, Lamage, Nepal
+</footer>
+
+</body>
+</html>
